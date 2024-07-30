@@ -1,30 +1,32 @@
-
-*{
+* {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-html,body{
+html, body {
     display: grid;
     height: 100%;
     place-items: center;
     background-color: black;
 }
 
-.text{
+.text {
     font-size: 150px;
     font-weight: 100;
     text-transform: uppercase;
     animation: animate 10s linear infinite;
-    background: linear-gradient(145deg,#bd00d6 10%,#ff1a0e 20%,#d001ff 40%,#e6ff01 50%,#5c04ff 70%,#e101ff);
+    background: linear-gradient(145deg, #bd00d6 10%, #ff1a0e 20%, #d001ff 40%, #e6ff01 50%, #5c04ff 70%, #e101ff);
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 @keyframes animate {
-    100%{
+    0% {
+        background-position: 0%;
+    }
+    100% {
         background-position: 400%;
     }
-    
 }
